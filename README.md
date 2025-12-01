@@ -4,7 +4,7 @@
 
 **PixArt Pro** is a lightweight, feature-rich pixel art editor that runs entirely in your browser. It combines a modern "glassmorphism" UI with professional tools like undo history, timelapse replays, and instant PNG export.
 
-🔗 **[Live Demo] (vercel link)**
+🔗 **[Live Demo] pix-art-niyo.vercel.app**
 
 ## ✨ Features
 
