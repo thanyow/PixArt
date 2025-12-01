@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixArt</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="brand">
+                <h1 class="logo">Pix<span>Art</span></h1>
+                <p class="version">v1.3</p>
+            </div>
+        
+            <div class="panel-group">
+                <h3>Grid Settings</h3>
+                <div class="input-row">
+                    <input type="number" id="input-width" min="5" max="50" value="20" title="Width">
+                    <span class="x-divider">×</span>
+                    <input type="number" id="input-height" min="5" max="50" value="20" title="Height">
+                </div>
+                <button id="btn-create" class="btn-primary" data-tooltip="Create new empty grid">New Grid</button>
+            </div>
+        
+            <div class="panel-group">
+                <h3>Drawing Tools</h3>
+                <div class="tools-row">
+                    <button id="btn-brush" class="btn-icon active" data-tooltip="Brush (B)">🖌️</button>
+                    <button id="btn-eraser" class="btn-icon" data-tooltip="Eraser (E)">🧹</button>
+                    <button id="btn-toggle-grid" class="btn-icon" data-tooltip="Toggle Grid (G)">#️⃣</button>
+                </div>
+            </div>
+        
+            <div class="panel-group">
+                <h3>Color Studio</h3>
+                
+                <div class="color-row">
+                    <label class="sub-label">Active Color</label>
+                    <div class="color-wrapper">
+                        <!-- Default value is Black -->
+                        <input type="color" id="color-picker" value="#000000" data-tooltip="Click to pick custom color">
+                        <span class="color-hint">#000000</span>
+                    </div>
+                </div>
+        
+                <div class="palette-row">
+                    <label class="sub-label">Quick Palette</label>
+                    <div id="palette" class="palette-grid"></div>
+                </div>
+            </div>
+        
+            <div class="panel-group spacer-top">
+                <button id="btn-replay" class="btn-secondary" data-tooltip="Watch Replay">▶ Replay</button>
+                <button id="btn-save" class="btn-success" data-tooltip="Download PNG">⬇ Save Image</button>
+            </div>
+        
+            <div class="shortcuts">
+                <p><strong>B</strong> Brush • <strong>E</strong> Eraser • <strong>Z</strong> Undo • <strong>G</strong> Grid</p>
+            </div>
+        </aside>
+
+        <main class="workspace">
+            <div class="canvas-wrapper">
+                <div id="pixel-canvas" class="canvas-grid"></div>
+            </div>
+            
+            <!-- STATUS BAR STRUCTURE -->
+            <div class="status-bar">
+                <div class="status-left">
+                    <span>Left Click: Draw</span>
+                    <span class="separator">•</span>
+                    <span>Right Click: Erase</span>
+                </div>
+                <div class="status-copyright">
+                    <span>PixArt by @thanyow</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
