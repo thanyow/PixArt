@@ -1,10 +1,10 @@
-# PixArt Pro 🎨
+# PixArt 🎨
 
 ![Version](https://img.shields.io/badge/version-1.3-blue.svg) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 **PixArt Pro** is a lightweight, feature-rich pixel art editor that runs entirely in your browser. It combines a modern "glassmorphism" UI with professional tools like undo history, timelapse replays, and instant PNG export.
 
-🔗 **[Live Demo] (pix-art-niyo.vercel.app)**
+🔗 **[Live Demo](https://pix-art-niyo.vercel.app)**
 
 ## ✨ Features
 
