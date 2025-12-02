@@ -11,7 +11,7 @@
 * **Dynamic Canvas:** Create grids from 5x5 up to 50x50.
 * **Smart Color Studio:**
     * Real-time Hex Code display.
-    * Quick Palette with 10 essential colors.
+    * Quick Palette with 10 colors.
     * Native Color Picker for custom shades.
 * **Professional Tools:**
     * **Brush & Eraser:** Switch tools instantly.
